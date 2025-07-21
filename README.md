@@ -1,12 +1,12 @@
 # OpenMind 🧠
 
-### 构建你的数字思维，让知识永不沉睡
+### 构建你的数字思维，让你的知识价值最大化
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord)](https://discord.gg/openmind)
-[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/futurx/openmind)
+[![Development](https://img.shields.io/badge/status-in%20development-yellow.svg)]()
+[![Demo](https://img.shields.io/badge/demo-available-green.svg)](mock_demo/)
 
-> 🎉 **FuturX 首个开源项目** - 将你的知识和个性转化为可随时调用的数字思维
+> 🚧 **项目开发中** - 真人数字思维构建框架，让你的知识和个性永续传承
 
 ## 🌟 为什么选择 OpenMind？
 
@@ -18,28 +18,28 @@
 - 🎭 **学习你的表达方式** - 捕捉你独特的思维模式和语言风格
 - 🔗 **随处可用** - 通过 API 或 MCP 协议集成到任何工作流程
 
-## 🚀 三分钟拥有你的数字分身
+## 🎮 体验 Demo
 
-### 1️⃣ 启动 OpenMind
+### 在线预览
 ```bash
-# 使用 Docker（推荐）
-docker run -d -p 3000:3000 futurx/openmind
-
-# 或从源码构建
-git clone https://github.com/futur-x/OpenMind.git
+# 克隆项目
+git clone https://github.com/your-username/OpenMind.git
 cd OpenMind
-docker-compose up -d
+
+# 直接在浏览器中打开
+open mock_demo/index.html
 ```
 
-### 2️⃣ 上传知识 & 设定个性
-- 📚 支持 PDF、Word、Markdown、TXT 文档
-- 👤 填写你的专业领域和个性特征
-- 🎯 系统自动构建专属于你的数字思维
+### Demo 功能展示
+- 🎯 **用户注册/登录** - 简洁的身份认证流程
+- 👤 **个人信息配置** - 智能的2列响应式表单设计
+- 📚 **知识库管理** - 直观的文档上传和管理界面
+- 💬 **AI 对话界面** - 流畅的聊天交互体验
+- 🔧 **系统构建过程** - 实时的思维构建进度展示
+- 🔗 **API & MCP 集成** - 完整的第三方集成说明
 
-### 3️⃣ 开始使用
-- 💬 **对话测试** - 在 Web 界面直接与你的数字思维交流
-- 🔌 **API 集成** - 获取 OpenAI 兼容的 API，一行代码即可调用
-- 🤖 **MCP 连接** - 一键配置，让 Claude、Cursor 等工具直接访问你的知识库
+### 完整的用户体验流程
+1. **注册登录** → **个人配置** → **上传文档** → **构建思维** → **开始对话**
 
 ## ✨ 核心特性
 
@@ -118,19 +118,49 @@ response = openai.ChatCompletion.create(
 - 🔧 想要贡献？查看 [Contributing Guide](CONTRIBUTING.md)
 - 💬 需要帮助？加入 [Discord 社区](https://discord.gg/openmind)
 
-## 📊 项目状态
+## 📊 开发进度
 
-- [x] 基础用户认证
-- [x] 文档上传与解析
-- [x] 个性化配置
-- [x] FuturGraph 知识图谱构建
-- [x] MindR 思维模型生成
-- [x] Web 对话界面
-- [x] OpenAI 兼容 API
-- [x] MCP 协议支持
-- [ ] 多语言界面
-- [ ] 高级知识库管理
-- [ ] 批量导入导出
+### 🎨 前端 Demo (已完成)
+- [x] **响应式 UI 设计** - 桌面端/移动端自适应
+- [x] **用户认证界面** - 登录注册流程
+- [x] **个人信息配置** - 优化的2列表单布局
+- [x] **知识库管理面板** - 文档上传和管理
+- [x] **AI 对话界面** - 流畅的聊天体验
+- [x] **系统构建进度** - 实时进度展示
+- [x] **API/MCP 集成页** - 第三方工具对接
+
+### 🔧 后端开发 (进行中)
+- [ ] Go 语言 Web 服务器
+- [ ] 用户认证与会话管理
+- [ ] 文档解析与存储
+- [ ] 向量数据库集成
+- [ ] 知识图谱构建
+- [ ] AI 模型推理服务
+- [ ] OpenAI 兼容 API
+- [ ] MCP 协议实现
+
+### 🚀 部署与运维 (计划中)
+- [ ] Docker 容器化
+- [ ] 数据备份恢复
+- [ ] 性能监控
+- [ ] 安全加固
+
+## 📁 项目结构
+
+```
+OpenMind/
+├── mock_demo/                 # 前端 Demo (可直接在浏览器中打开)
+│   ├── index.html            # 登录页面
+│   ├── profile.html          # 个人信息配置
+│   ├── dashboard.html        # 知识库管理面板
+│   ├── chat.html             # AI 对话界面
+│   ├── building.html         # 系统构建进度
+│   ├── integration.html      # API/MCP 集成
+│   └── styles/               # 样式文件
+├── backend/                  # 后端服务 (开发中)
+├── docs/                     # 项目文档
+└── README.md                 # 项目说明
+```
 
 ## 📜 开源协议
 
@@ -140,5 +170,5 @@ MIT License - 自由使用、修改和分发
 
 <p align="center">
   <strong>OpenMind - 让每个人的智慧都能被传承和分享</strong><br/>
-  <sub>Powered by FuturX • 真人数字思维构建者</sub>
+  <sub>真人数字思维构建框架 • 开源项目</sub>
 </p>
